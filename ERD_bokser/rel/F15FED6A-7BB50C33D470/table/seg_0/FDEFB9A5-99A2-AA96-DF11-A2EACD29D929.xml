@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FDEFB9A5-99A2-AA96-DF11-A2EACD29D929" name="walka">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:18:18 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="AA5F5898-1FC0-6FC6-FD6A-891331511C14">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:19:35 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bokser1_id" id="6C42C211-37F7-F0C0-E89D-D4B3B1D14EE7">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:22:24 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1CB2B64E-C8F3-53F3-351A-E484F73988F8" referredColumn="9C76DA3C-D121-0BAB-07AC-00E453D473AF"/>
+</associations>
+</Column>
+<Column name="bokser2_id" id="A3BB3818-F31C-4AB1-F79D-E4F83A5DD0BC">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:22:51 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B3CCF0D-45CD-004D-3D15-920F2B59549C" referredColumn="9C76DA3C-D121-0BAB-07AC-00E453D473AF"/>
+</associations>
+</Column>
+<Column name="zwyciezca" id="65A11065-840A-BC4B-9365-33B9F1BADC85">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:19:35 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="kat_wagowa_id" id="58E66A81-7C3C-B710-DD93-9F491A23D3D7">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:21:46 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BAF4FE63-1320-18DE-BB69-34D1B673B4E8" referredColumn="36917E1B-39E5-3D2A-CD46-971AB1566BD6"/>
+</associations>
+</Column>
+<Column name="data_walka" id="17BAC72E-3DA5-7F7C-C35D-9A0245938561">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:19:35 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B59FAEEA-8A96-6473-BFBC-6D8EA5358327" name="walka_PK">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:19:35 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA5F5898-1FC0-6FC6-FD6A-891331511C14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C997260A-8549-BA2D-919E-13F5E74F21DF" name="walka_kat_wagowa_FK">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:21:46 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58E66A81-7C3C-B710-DD93-9F491A23D3D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1149444-3E99-3B0B-7F0C-C0E4B5173201" name="walka_bokser_FK1">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:22:24 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C42C211-37F7-F0C0-E89D-D4B3B1D14EE7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71F1146B-3464-940B-E916-54F1D8E90E43" name="walka_bokser_FK2">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:22:51 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3BB3818-F31C-4AB1-F79D-E4F83A5DD0BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

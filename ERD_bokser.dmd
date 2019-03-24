@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ERD_bokser" id="48BFEA3E-3B2E-A3BC-EE36-51EFEC55497A" version="3.5">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:11:42 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>48BFEA3E-3B2E-A3BC-EE36-51EFEC55497A</designId>
+</OSDM_Design>

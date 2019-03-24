@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9F33BA4B-82A2-E94D-9CFB-767A5A9857D2" name="kat_wagowa">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:16:22 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="36917E1B-39E5-3D2A-CD46-971AB1566BD6">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:18:06 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="min_waga" id="DB5A47C2-E044-FE5E-BA4C-46C996D0E251">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:18:06 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="max_waga" id="CD5380A2-D6F0-122D-DCF5-ADD7B20071FE">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:18:06 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa_kat_wagowa" id="E33A349E-2C02-4DFF-7985-8EA3DFC0B1A5">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:18:06 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CF8B4632-6549-5AA9-27D7-17FE0A80FC3B" name="kat_wagowa_PK">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:18:06 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36917E1B-39E5-3D2A-CD46-971AB1566BD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

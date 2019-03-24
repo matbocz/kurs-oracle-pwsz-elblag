@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="65D8027C-EBF7-9E79-0E06-301457E34B9B" name="klub">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:12:01 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="63A8E3D1-3750-4494-FBAB-B3D3F7133EE5">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:13:55 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa_klub" id="CB7F0639-6586-B0E5-42C4-EBE1873A68DE">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:13:55 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ranking" id="437B79BD-67A7-0250-4054-EDB844540643">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:13:55 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F814B715-9FCB-D5BA-95CD-1F9A379D1645" name="klub_PK">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:13:55 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63A8E3D1-3750-4494-FBAB-B3D3F7133EE5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

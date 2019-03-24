@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="5EDD4CB8-9DD5-B540-35DF-32F8F6C073DF" mainViewID="D40C3FBC-1FF6-3DD3-39DD-F45EB5CA167A">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:11:42 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

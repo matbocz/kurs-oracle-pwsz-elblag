@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B74B6FCD-328F-B260-D858-CF0433E8AAA3" name="bokser">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:14:02 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="9C76DA3C-D121-0BAB-07AC-00E453D473AF">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:16:15 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="imie" id="E0B935BE-4231-5F47-B87D-329FB20EAB07">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:16:15 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwisko" id="3B25381C-6C7C-4957-02C3-9F7ECA400724">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:16:15 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_ur" id="FD6E08C2-3AE2-D64F-5C56-A47B068464D1">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:16:15 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="waga" id="7DCCA451-6D92-940E-9029-E998ACB285B3">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:16:15 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="wzrost" id="566DED1A-23E5-ABD2-3E08-8CB546D68C82">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:16:15 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="klub_id" id="59678A86-AE09-6508-5758-4907489D995A">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:20:53 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E72DC07-2DF6-870E-BFE1-90D896D9FDDE" referredColumn="63A8E3D1-3750-4494-FBAB-B3D3F7133EE5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9BAE9701-A4AB-D1D2-406B-0649AFBCCA05" name="bokser_PK">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:16:15 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C76DA3C-D121-0BAB-07AC-00E453D473AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF2F8FC2-F8F0-3F28-393B-07BA78CFC239" name="bokser_klub_FK">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-24 12:20:53 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59678A86-AE09-6508-5758-4907489D995A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
