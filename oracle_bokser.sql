@@ -102,7 +102,104 @@ END;
 /
 
 -- Dopisz przykladowe rekordy z walkami (dodaj co najmniej 20 walk):
+INSERT INTO klub(nazwa_klub, ranking)
+VALUES ('Tygryski','100');
+INSERT INTO klub(nazwa_klub, ranking)
+VALUES ('Kangurki','30');
+INSERT INTO klub(nazwa_klub, ranking)
+VALUES ('Kogutki','80');
+INSERT INTO klub(nazwa_klub, ranking)
+VALUES ('Wilczki','70');
 
+INSERT INTO kat_wagowa(min_waga, max_waga, nazwa_kat_wagowa)
+VALUES ('1','48','papierowa');
+INSERT INTO kat_wagowa(min_waga, max_waga, nazwa_kat_wagowa)
+VALUES ('48','51','musza');
+INSERT INTO kat_wagowa(min_waga, max_waga, nazwa_kat_wagowa)
+VALUES ('51','54','kogucia');
+INSERT INTO kat_wagowa(min_waga, max_waga, nazwa_kat_wagowa)
+VALUES ('54','57','piorkowa');
+INSERT INTO kat_wagowa(min_waga, max_waga, nazwa_kat_wagowa)
+VALUES ('57','60','lekka');
+INSERT INTO kat_wagowa(min_waga, max_waga, nazwa_kat_wagowa)
+VALUES ('60','63','lekkopolsrednia');
+INSERT INTO kat_wagowa(min_waga, max_waga, nazwa_kat_wagowa)
+VALUES ('63','67','polsrednia');
+INSERT INTO kat_wagowa(min_waga, max_waga, nazwa_kat_wagowa)
+VALUES ('67','71','lekkosrednia');
+INSERT INTO kat_wagowa(min_waga, max_waga, nazwa_kat_wagowa)
+VALUES ('71','75','srednia');
+INSERT INTO kat_wagowa(min_waga, max_waga, nazwa_kat_wagowa)
+VALUES ('75','81','polciezka');
+INSERT INTO kat_wagowa(min_waga, max_waga, nazwa_kat_wagowa)
+VALUES ('80','200','ciezka');
+
+INSERT INTO bokser(imie, nazwisko, data_ur, waga, wzrost, klub_id)
+VALUES ('Jan','Nowak','1993-12-23','60','167','1');
+INSERT INTO bokser(imie, nazwisko, data_ur, waga, wzrost, klub_id)
+VALUES ('Adam','Kowal','1994-10-01','54','161','1');
+INSERT INTO bokser(imie, nazwisko, data_ur, waga, wzrost, klub_id)
+VALUES ('Jerzy','Kurek','1980-03-17','59','171','1');
+INSERT INTO bokser(imie, nazwisko, data_ur, waga, wzrost, klub_id)
+VALUES ('Kamil','Kwota','1991-09-11','71','173','2');
+INSERT INTO bokser(imie, nazwisko, data_ur, waga, wzrost, klub_id)
+VALUES ('Marek','Dorek','1995-11-19','68','165','2');
+INSERT INTO bokser(imie, nazwisko, data_ur, waga, wzrost, klub_id)
+VALUES ('Jacek','Burczak','1992-02-28','60','175','2');
+INSERT INTO bokser(imie, nazwisko, data_ur, waga, wzrost, klub_id)
+VALUES ('Jacek','Burczak','1992-02-28','60','175','2');
+INSERT INTO bokser(imie, nazwisko, data_ur, waga, wzrost, klub_id)
+VALUES ('Marcin','Korczak','1994-06-13','61','169','3');
+INSERT INTO bokser(imie, nazwisko, data_ur, waga, wzrost, klub_id)
+VALUES ('Marcin','Korczak','1994-06-13','61','169','3');
+INSERT INTO bokser(imie, nazwisko, data_ur, waga, wzrost, klub_id)
+VALUES ('Krzysztof','Domczyk','1992-06-01','71','174','1');
+
+INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
+VALUES ('1','6','1','6','2017-01-03');
+INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
+VALUES ('1','7','1','6','2017-02-10');
+INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
+VALUES ('1','8','2','6','2017-02-12');
+INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
+VALUES ('1','9','1','6','2017-03-01');
+INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
+VALUES ('4','10','1','9','2017-03-05');
+INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
+VALUES ('5','4','2','8','2017-03-12');
+INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
+VALUES ('5','10','1','8','2017-04-20');
+INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
+VALUES ('6','1','1','6','2017-04-22');
+INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
+VALUES ('6','7','2','6','2017-05-02');
+INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
+VALUES ('6','8','1','6','2017-05-10');
+INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
+VALUES ('6','9','2','6','2017-05-12');
+INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
+VALUES ('7','1','2','6','2017-05-15');
+INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
+VALUES ('7','6','1','6','2017-05-20');
+INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
+VALUES ('7','8','1','6','2017-05-22');
+INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
+VALUES ('7','9','1','6','2017-05-27');
+INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
+VALUES ('8','1','2','6','2017-06-04');
+INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
+VALUES ('8','6','2','6','2017-06-15');
+INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
+VALUES ('8','7','2','6','2017-06-17');
+INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
+VALUES ('8','9','1','6','2017-06-24');
+INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
+VALUES ('10','4','1','9','2017-07-08');
+
+SELECT * FROM klub;
+SELECT * FROM kat_wagowa;
+SELECT * FROM bokser;
+SELECT * FROM walka;
 
 -- 1. Wyswietlic imie, nazwisko, wage najciezszego zawodnika 
 --    oraz nazwe klubu, w ktorym trenuje.
