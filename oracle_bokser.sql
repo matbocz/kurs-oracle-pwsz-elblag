@@ -160,7 +160,7 @@ VALUES ('1','6','1','6','2017-01-03');
 INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
 VALUES ('1','7','1','6','2017-02-10');
 INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
-VALUES ('1','8','2','6','2017-02-12');
+VALUES ('1','8','1','6','2017-02-12');
 INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
 VALUES ('1','9','1','6','2017-03-01');
 INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
@@ -170,7 +170,7 @@ VALUES ('5','4','2','8','2017-03-12');
 INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
 VALUES ('5','10','1','8','2017-04-20');
 INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
-VALUES ('6','1','1','6','2017-04-22');
+VALUES ('6','1','2','6','2017-04-22');
 INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
 VALUES ('6','7','2','6','2017-05-02');
 INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
