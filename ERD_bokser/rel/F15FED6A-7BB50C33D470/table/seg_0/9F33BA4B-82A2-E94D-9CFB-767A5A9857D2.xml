@@ -64,5 +64,35 @@
 <colUsage columnID="36917E1B-39E5-3D2A-CD46-971AB1566BD6"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="5D5B7080-C3F9-802A-5F66-99FEC0B498F8" name="kat_wagowa__UN">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-28 20:33:07 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E33A349E-2C02-4DFF-7985-8EA3DFC0B1A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
 </indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="kat_wagowa_CK_1" directorySegmentName="seg_0" id="ACADCA14-E78F-86EC-D942-ED5AD7B19B2E">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-28 20:34:07 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<rule>min_waga &gt; 0</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="kat_wagowa_CK_2" directorySegmentName="seg_0" id="9C7CA0A3-2791-A94E-97E9-D4913EF0BEDA">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-28 20:37:36 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<rule>max_waga &gt; 0</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="kat_wagowa_CK_3" directorySegmentName="seg_0" id="5009CA80-0F91-3326-6F20-800E509D41D4">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-28 20:38:09 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<rule>LENGTH(nazwa_kat_wagowa) &gt; 2</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
 </Table>

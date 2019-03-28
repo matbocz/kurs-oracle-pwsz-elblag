@@ -110,4 +110,30 @@
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="bokser_CK_1" directorySegmentName="seg_0" id="BF7880DE-DB84-A18E-8056-4E4EE94BB3BF">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-28 20:39:33 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<rule>LENGTH(imie) &gt; 2</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="bokser_CK_2" directorySegmentName="seg_0" id="AC9E5751-23D9-6DAC-584D-743FF41847D1">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-28 20:39:33 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<rule>LENGTH(nazwisko) &gt; 2</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="bokser_CK_3" directorySegmentName="seg_0" id="686600AA-C19E-795B-2B5D-07C2DA920604">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-28 20:39:33 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<rule>waga &gt; 0</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="bokser_CK_4" directorySegmentName="seg_0" id="46FB2DC8-926F-8CF8-D9B2-DFFBCA12968F">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-28 20:39:33 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<rule>wzrost &gt; 0</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
 </Table>

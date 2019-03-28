@@ -54,5 +54,23 @@
 <colUsage columnID="63A8E3D1-3750-4494-FBAB-B3D3F7133EE5"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="B83B43B6-A932-C76A-FAF7-94AE0B8067D1" name="klub__UN">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-28 20:32:53 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB7F0639-6586-B0E5-42C4-EBE1873A68DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
 </indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="klub_CK_1" directorySegmentName="seg_0" id="DE2B108E-F17A-80C3-357B-34AA86A42D40">
+<createdBy>matbo</createdBy>
+<createdTime>2019-03-28 20:38:33 UTC</createdTime>
+<ownerDesignName>ERD_bokser</ownerDesignName>
+<rule>LENGTH(nazwa_klub) &gt; 2</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
 </Table>
