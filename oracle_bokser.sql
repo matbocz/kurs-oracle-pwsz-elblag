@@ -134,6 +134,7 @@ INSERT INTO klub(nazwa_klub, ranking)
 VALUES ('Kogutki','80');
 INSERT INTO klub(nazwa_klub, ranking)
 VALUES ('Wilczki','70');
+SELECT * FROM klub;
 
 INSERT INTO kat_wagowa(min_waga, max_waga, nazwa_kat_wagowa)
 VALUES ('1','48','papierowa');
@@ -157,6 +158,7 @@ INSERT INTO kat_wagowa(min_waga, max_waga, nazwa_kat_wagowa)
 VALUES ('75','81','polciezka');
 INSERT INTO kat_wagowa(min_waga, max_waga, nazwa_kat_wagowa)
 VALUES ('80','200','ciezka');
+SELECT * FROM kat_wagowa;
 
 INSERT INTO bokser(imie, nazwisko, data_ur, waga, wzrost, klub_id)
 VALUES ('Jan','Nowak','1993-12-23','60','167','1');
@@ -178,6 +180,7 @@ INSERT INTO bokser(imie, nazwisko, data_ur, waga, wzrost, klub_id)
 VALUES ('Marcin','Korczak','1994-06-13','61','169','3');
 INSERT INTO bokser(imie, nazwisko, data_ur, waga, wzrost, klub_id)
 VALUES ('Krzysztof','Domczyk','1992-06-01','71','174','1');
+SELECT * FROM bokser;
 
 INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
 VALUES ('1','6','1','6','2017-01-03');
@@ -219,15 +222,10 @@ INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
 VALUES ('8','9','1','6','2017-06-24');
 INSERT INTO walka(bokser1_id, bokser2_id, zwyciezca, kat_wagowa_id, data_walka)
 VALUES ('10','4','1','9','2017-07-08');
-
-SELECT * FROM klub;
-SELECT * FROM kat_wagowa;
-SELECT * FROM bokser;
 SELECT * FROM walka;
 
 -- 1. Wyswietlic imie, nazwisko, wage najciezszego zawodnika 
 --    oraz nazwe klubu, w ktorym trenuje.
-
 
 -- 2. Wypisac pieciu zawodnikow o najwiekszych wagach. 
 --    Jezeli kilku ma taka sama wage, wypisac tych o 
