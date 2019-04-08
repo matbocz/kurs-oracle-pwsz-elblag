@@ -11,6 +11,16 @@ CREATE TABLE bokser (
     klub_id    INTEGER NOT NULL
 );
 
+ALTER TABLE bokser
+    ADD CONSTRAINT bokser_ck_1 CHECK ( length(imie) > 2 );
+
+ALTER TABLE bokser
+    ADD CONSTRAINT bokser_ck_2 CHECK ( length(nazwisko) > 2 );
+
+ALTER TABLE bokser ADD CONSTRAINT bokser_ck_3 CHECK ( waga > 0 );
+
+ALTER TABLE bokser ADD CONSTRAINT bokser_ck_4 CHECK ( wzrost > 0 );
+
 ALTER TABLE bokser ADD CONSTRAINT bokser_pk PRIMARY KEY ( id );
 
 CREATE TABLE kat_wagowa (
@@ -20,7 +30,16 @@ CREATE TABLE kat_wagowa (
     nazwa_kat_wagowa   VARCHAR2(20) NOT NULL
 );
 
+ALTER TABLE kat_wagowa ADD CONSTRAINT kat_wagowa_ck_1 CHECK ( min_waga > 0 );
+
+ALTER TABLE kat_wagowa ADD CONSTRAINT kat_wagowa_ck_2 CHECK ( max_waga > 0 );
+
+ALTER TABLE kat_wagowa
+    ADD CONSTRAINT kat_wagowa_ck_3 CHECK ( length(nazwa_kat_wagowa) > 2 );
+
 ALTER TABLE kat_wagowa ADD CONSTRAINT kat_wagowa_pk PRIMARY KEY ( id );
+
+ALTER TABLE kat_wagowa ADD CONSTRAINT kat_wagowa__un UNIQUE ( nazwa_kat_wagowa );
 
 CREATE TABLE klub (
     id           INTEGER NOT NULL,
@@ -28,7 +47,12 @@ CREATE TABLE klub (
     ranking      INTEGER NOT NULL
 );
 
+ALTER TABLE klub
+    ADD CONSTRAINT klub_ck_1 CHECK ( length(nazwa_klub) > 2 );
+
 ALTER TABLE klub ADD CONSTRAINT klub_pk PRIMARY KEY ( id );
+
+ALTER TABLE klub ADD CONSTRAINT klub__un UNIQUE ( nazwa_klub );
 
 CREATE TABLE walka (
     id              INTEGER NOT NULL,
