@@ -226,6 +226,9 @@ SELECT * FROM walka;
 
 -- 1. Wyswietlic imie, nazwisko, wage najciezszego zawodnika 
 --    oraz nazwe klubu, w ktorym trenuje.
+SELECT b.imie, b.nazwisko, b.waga, k.nazwa_klub FROM bokser b
+JOIN klub k ON b.klub_id = k.id
+WHERE b.waga = (SELECT MAX(waga) FROM bokser);
 
 -- 2. Wypisac pieciu zawodnikow o najwiekszych wagach. 
 --    Jezeli kilku ma taka sama wage, wypisac tych o 
