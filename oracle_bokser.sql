@@ -233,7 +233,9 @@ WHERE b.waga = (SELECT MAX(waga) FROM bokser);
 -- 2. Wypisac pieciu zawodnikow o najwiekszych wagach. 
 --    Jezeli kilku ma taka sama wage, wypisac tych o 
 --    nazwiskach wczesniejszych alfabetycznie.
-
+SELECT imie, nazwisko, waga 
+FROM (SELECT * FROM bokser ORDER BY waga DESC, nazwisko ASC)
+WHERE ROWNUM <= 5;
 
 -- 3. Dla kazdego z klubow wypisac jego nazwe oraz 
 --    nazwisko i wage najlzejszego i najciezszego zawodnika.
