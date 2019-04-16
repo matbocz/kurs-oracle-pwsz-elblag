@@ -239,7 +239,10 @@ WHERE ROWNUM <= 5;
 
 -- 3. Dla kazdego z klubow wypisac jego nazwe oraz 
 --    nazwisko i wage najlzejszego i najciezszego zawodnika.
-
+SELECT k.nazwa_klub, MAX(b.waga) AS najciezszy_zawodnik, MIN(b.waga) AS najlzejszy_zawodnik
+FROM klub k JOIN bokser b ON k.id = b.klub_id
+GROUP BY k.nazwa_klub
+ORDER BY najciezszy_zawodnik DESC;
 
 -- 4. Wypisac nazwiska bokserow, ktorzy nie przegrali 
 --    zadnej walki.
