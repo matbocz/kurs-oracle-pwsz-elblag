@@ -296,7 +296,10 @@ WHERE id NOT IN(SELECT DISTINCT klub_id FROM bokser);
 
 -- 10. Wypisac tych zawodnikow, dla ktorych imiona i nazwiska 
 --     sa takie same, ale wartosci indentyfikatorow sa rozne.
-
+SELECT imie, nazwisko, COUNT(*) AS ilosc_powtorzen 
+FROM bokser
+GROUP BY imie, nazwisko
+HAVING COUNT(*) > 1;
 
 -- 11. Wypisac nazwy klubow, ktorych zawodnicy wygrali 
 --     ponad 20% wszystkich walk.
