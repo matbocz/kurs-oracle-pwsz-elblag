@@ -285,7 +285,9 @@ ORDER BY ilosc_wygranych DESC;
 
 -- 8. Wypisac kategorie wagowe, w ktorych nie wystepowal 
 --    zaden bokser.
-
+SELECT nazwa_kat_wagowa 
+FROM kat_wagowa
+WHERE id NOT IN(SELECT DISTINCT kat_wagowa_id FROM walka);
 
 -- 9. Wypisac nazwy klubow, w ktorych nikt nie walczy.
  
