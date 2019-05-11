@@ -290,7 +290,9 @@ FROM kat_wagowa
 WHERE id NOT IN(SELECT DISTINCT kat_wagowa_id FROM walka);
 
 -- 9. Wypisac nazwy klubow, w ktorych nikt nie walczy.
- 
+SELECT nazwa_klub 
+FROM klub
+WHERE id NOT IN(SELECT DISTINCT klub_id FROM bokser);
 
 -- 10. Wypisac tych zawodnikow, dla ktorych imiona i nazwiska 
 --     sa takie same, ale wartosci indentyfikatorow sa rozne.
