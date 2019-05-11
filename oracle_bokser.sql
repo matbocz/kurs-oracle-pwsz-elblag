@@ -266,7 +266,18 @@ GROUP BY b.imie, b.nazwisko, kt.nazwa_kat_wagowa
 ORDER BY ilosc_wygranych DESC;
 
 -- 6. Wypisac nazwy klubow z liczba zwyciestw ich zawodnikow.
-
+SELECT k.nazwa_klub, COUNT(w.bokser1_id) AS ilosc_wygranych
+FROM klub k JOIN bokser b ON k.id = b.klub_id
+JOIN walka w ON b.id = w.bokser1_id
+WHERE zwyciezca = 1
+GROUP BY k.nazwa_klub
+UNION ALL
+SELECT k.nazwa_klub, COUNT(w.bokser2_id) AS ilosc_wygranych
+FROM klub k JOIN bokser b ON k.id = b.klub_id
+JOIN walka w ON b.id = w.bokser2_id
+WHERE zwyciezca = 2
+GROUP BY k.nazwa_klub
+ORDER BY ilosc_wygranych DESC;
 
 -- 7. Dla kazdego klubu wypisac maksymalna liczbe zwyciestw 
 --    jednego zawodnika tego klubu.
